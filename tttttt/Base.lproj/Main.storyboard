@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -97,6 +98,15 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AutoLayout就是这么任性!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fx4-Z3-a4D">
+                                <rect key="frame" x="26" y="40" width="548" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="78O-43-Mu4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -118,13 +128,16 @@
                             <constraint firstItem="xBi-0c-Nwf" firstAttribute="centerY" secondItem="H1W-e5-9Vp" secondAttribute="centerY" id="fft-X2-wnc"/>
                             <constraint firstItem="xBi-0c-Nwf" firstAttribute="centerY" secondItem="b8B-od-G1r" secondAttribute="centerY" id="iCl-S4-pnt"/>
                             <constraint firstAttribute="centerY" secondItem="b8B-od-G1r" secondAttribute="centerY" id="iEn-NZ-xp4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fx4-Z3-a4D" secondAttribute="trailing" constant="10" id="iOr-jK-Zoq"/>
                             <constraint firstItem="sx0-hn-rLt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="iYQ-qv-KIe"/>
                             <constraint firstItem="sx0-hn-rLt" firstAttribute="height" secondItem="Tya-8m-m04" secondAttribute="height" id="lur-YE-tL9"/>
                             <constraint firstItem="sx0-hn-rLt" firstAttribute="bottom" secondItem="69o-2V-lLA" secondAttribute="bottom" id="lyT-Tq-cJG"/>
                             <constraint firstItem="xBi-0c-Nwf" firstAttribute="centerY" secondItem="3yW-X3-K6l" secondAttribute="centerY" id="oyt-WN-nUL"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="69o-2V-lLA" secondAttribute="bottom" id="rDk-ZV-0UD"/>
+                            <constraint firstItem="Fx4-Z3-a4D" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="s8s-Zj-Psw"/>
                             <constraint firstItem="xBi-0c-Nwf" firstAttribute="height" secondItem="3yW-X3-K6l" secondAttribute="height" id="sfM-uI-6pT"/>
                             <constraint firstItem="sx0-hn-rLt" firstAttribute="width" secondItem="Tya-8m-m04" secondAttribute="width" id="tJx-Dn-8hH"/>
+                            <constraint firstItem="Fx4-Z3-a4D" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="uwP-cj-gKL"/>
                         </constraints>
                     </view>
                 </viewController>
